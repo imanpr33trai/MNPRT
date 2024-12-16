@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kanit:wght@500&family=Parkinsans:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Screen Layout */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    /* font-family: "Kanit", sans-serif; */
+}
+body{
+    min-height: 100vh;
+}
+
+/* Custom Font */
+@font-face {
+    font-family: "offbit Trial Dot";
+    src: local('OffBit Trial Dot'), url('assets/offbit-trial-webfont/OffBitTrial-Dot.woff') format('woff');
+}
+    @font-face {
+    font-family: 'OffBit Trial Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('OffBit Trial Bold'), url('assets/offbit-trial-webfont/OffBitTrial-Bold.woff') format('woff');
+    }
+
+/* Main Header Styling */
+.main-header {
+    width: 100%;
+    height: auto;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(0, 0, 0);
+    position: fixed;
+    z-index: 10;
+    display: block;
+}
+
+/* Navigation Bar */
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* Navigation Items */
+.nav-item {
+    text-decoration: none;
+    margin: 10px 20px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: "Kanit", serif;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 
+        background-color 0.3s ease,   /* Smooth transition for background color */
+        color 0.3s ease,              /* Smooth transition for text color */
+        border 0.3s ease; 
+}
+
+.nav-item:hover {
+    border: 2px solid rgb(138, 135, 135);
+    border-radius: 5px;
+    padding: 5px 5px ;
+    background-color: rgb(231, 231, 231);
+    
+}
+
+/* Main Content */
+.main-content {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 45px; 
+    display: flex;
+    flex-direction: column;
+    /* gap: 50px; */
+    /* justify-content: center; */
+}
+.sentence{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 95vh;
+
+}
+
+.main-content .sentence .line{
+    color: white;
+    font-size: 3vh;
+    text-transform: uppercase;
+    position: absolute;
+
+}
+.first-line{
+    font-family:"offbit Trial Dot";    
+    line-height: 7.3;
+    position: absolute;
+    letter-spacing: 5px;
+}
+.second-line{
+    font-size: 17vh !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* section end here */
+
+/* morqee */
+.move{
+    display: flex;
+    top: 100%;
+    background-color: black;
+    min-height: 5vh;
+
+}
+.morque{
+    font-size: 3vh;
+    color: white;
+    flex-shrink: 0;
+    text-transform: capitalize;
+    font-family: "roboto";
+    margin-right: 30px;
+    letter-spacing: 2px;
+}
+
+.blur-section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.blur-section .blur-text{
+    position: absolute;
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 11vh;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: -3px;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+}
+.blur-section .grid{  
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-template-rows: repeat(4 400px) ;
+    gap: 3px;
+    grid-auto-flow: row;
+    width: 100%;
+    height: 150%;
+  }
+  
+.box
+{
+    background-color: transparent;
+    border-radius: 25px;
+}
+.para{
+    width: 100%;
+    min-height: 100%;
+    background-color: white;
+    position: relative;
+}
+.para .paragraph{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.para .paragraph .para-graph{
+    width: 25vw;
+    font-size: 30px;
+    color: black;
+
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Montserrat",serif;
+    /* line-height: 1; */
+}
