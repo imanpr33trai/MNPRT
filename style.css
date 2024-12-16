@@ -8,7 +8,7 @@
 
 /* Full-Screen Layout */
 html, body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     width: 100%;
     height: 100%;
     /* font-family: "Kanit", sans-serif; */
@@ -51,7 +51,7 @@ body{
 .nav-item {
     text-decoration: none;
     margin: 10px 20px;
-    font-size: 15px;
+    font-size: 70%;
     color: rgb(0, 0, 0);
     font-family: "Kanit", serif;
     box-sizing: border-box;
@@ -91,13 +91,13 @@ body{
     text-align: center;
     position: relative;
     width: 100%;
-    min-height: 95vh;
+    min-height: 100%;
 
 }
 
 .main-content .sentence .line{
     color: white;
-    font-size: 3vh;
+    font-size: 150%;
     text-transform: uppercase;
     position: absolute;
 
@@ -109,7 +109,7 @@ body{
     letter-spacing: 5px;
 }
 .second-line{
-    font-size: 17vh !important;
+    font-size: 1000% !important;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -124,24 +124,25 @@ body{
 
 }
 .morque{
-    font-size: 3vh;
+    font-size: 150%;
     color: white;
     flex-shrink: 0;
     text-transform: capitalize;
     font-family: "roboto";
     margin-right: 30px;
     letter-spacing: 2px;
+
 }
 
 .blur-section{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
+    z-index: -1;
 }
 
 .blur-section .blur-text{
@@ -155,12 +156,29 @@ body{
     top: 50%;
     transform: translateY(-50%);
     letter-spacing: -3px;
+    z-index: -1;
 }
-.container{
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
+.grid-text{
 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-text h1{
+    color: rgb(165, 165, 165);
+    font-size:18vh;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    /* transform: translateY(-50%); */
+    letter-spacing: 3px;
+    font-family: "kanit",sans-serif;
 }
 .blur-section .grid{  
     display: grid;
@@ -170,12 +188,14 @@ body{
     grid-auto-flow: row;
     width: 100%;
     height: 150%;
+    
   }
   
 .box
 {
     background-color: transparent;
     border-radius: 25px;
+
 }
 .para{
     width: 100%;
